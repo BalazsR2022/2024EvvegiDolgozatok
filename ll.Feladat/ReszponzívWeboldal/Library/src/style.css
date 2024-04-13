@@ -1,0 +1,82 @@
+/*
+* File: style.css
+* Author: Balázs Réka
+* Copyright: 2024, Balázs Réka
+* Group: Szoft II/1
+* Date: 2024-04-07
+
+* Licenc: GNU GPL
+*/
+
+h1{
+    background-color: rgba(161, 211, 54, 0.6);
+    color: white;
+    font-size: 20rem;
+    text-align: center;
+    margin-top: 4vh;
+    font-weight: lighter;
+  
+}
+
+body {
+    min-width: 400px;
+    background-image: url("Bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat, no-repeat; 
+}
+
+div.col-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+    border: 10px solid #a1d336;
+    margin: 2rem auto;
+    width: 50vw;
+    margin-top:5rem;
+    
+  }
+  .col-4 span {
+    margin: 0 10px;
+    cursor: pointer; 
+}
+
+img{
+    max-width:90%;
+}
+
+.rorated{
+        transform: rotate(180deg); 
+}
+
+
+
+
+@media only screen and (max-width: 768px)  {
+
+
+    div.col-4  {
+        border-color: rgba(161, 211, 54, 0);
+        margin-top: 5vh;
+    }
+    img{
+        width: 80%;
+
+    }
+    .rorated{
+        transform: rotate(0deg); 
+}
+}
+
+/*
+
+6) 768px-nél (medium) kisebb kijelzőn a weboldal kinézete a második mintának megfelelően
+változzon.
+8) A könyv gombokat befoglaló keret tűnjön el, a keret foglalja el a rendelkezésére álló összes
+helyet, felső margója 5vh legyen.
+9) A könyv képek a rendelkezésükre álló hely 80%-át foglalják el, a második kép ne legyen
+elforgatott és a képek (ízléses margóval) kerüljenek egymás alá. (lásd. minta2)*/
+
+
+
+
